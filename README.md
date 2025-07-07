@@ -6,8 +6,11 @@ Question: Create four variables, one each for age, height, name, and whether you
 
 
 var1 = int(input('Enter your age:'))
+
 var2 = float(input('Enter your Height:'))
+
 var3 = str(input('Enter your name:'))
+
 var4 = bool(input('Are you a student:'))
 .
 .
@@ -24,9 +27,8 @@ var4 = bool(input('Are you a student:'))
 **2. Function Creation**
 Question: Write a function called greet_user(name) that returns a welcome message.
 
-
 def greet_user(name):
-    return f"Welcome, {name}!"
+    return f"Welcome, {name}!"   
 message = greet_user("Coach")
 print(message)
 
@@ -45,11 +47,15 @@ Question: Ask the user to enter a username and password. If the username is "adm
 
 
 def login():
+   
     username = input("Enter username: ")
+    
     password = input("Enter password: ")
+
 
     if username == "admin" and password == "1234":
         print("Login successful")
+        
     else:
         print("Access denied")
 
@@ -62,7 +68,41 @@ def login():
 .
 .
 .
+**4.Basic Calculator (Functions + Conditions)**
+Question: Build a calculator that can add, subtract, multiply, or divide two numbers based on user input.
 
+
+
+def calculator(a,b, operator):
+    
+    if operator == 'add':
+        c=a+b
+        print (c)
+    elif operator =='sub':
+        c=a-b
+        print (c)
+    elif operator =='mul':
+        c=a*b
+        print(c)
+    elif operator =='div':
+        c=a/b
+        print(c)
+    else:
+        print('Error, check your opeartor name')
+
+
+
+
+
+
+.
+.
+.
+.
+.
+.
+.
+.
 
 **5. Age Categorizer**
 Question: Ask the user to enter their age and print the category:0–12: Child, 13–19: Teen, 20–64: Adult, 65+: Senior
